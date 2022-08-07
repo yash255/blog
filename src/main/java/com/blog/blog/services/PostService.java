@@ -2,8 +2,8 @@ package com.blog.blog.services;
 
 import java.util.List;
 
-import com.blog.blog.models.Post;
 import com.blog.blog.payloads.PostDTO;
+import com.blog.blog.payloads.PostResponse;
 
 public interface PostService {
     
@@ -17,7 +17,7 @@ PostDTO updatePost(PostDTO postDTO,Integer postId);
 void deletePost(Integer postId);
 
 //get all
-List<PostDTO> getAllPost();
+PostResponse getAllPost(Integer pageNumber,Integer pageSize,String sortBy,String sortDir);
 
 //get single post
 PostDTO getPostById(Integer postId);
@@ -29,5 +29,5 @@ List<PostDTO> getPostByCategory(Integer categoryId);
 List<PostDTO> getPostByUser(Integer userId);
 
 //search posts
-List<Post> searchPosts(String keyword);
+List<PostDTO> searchPosts(String keyword);
 }

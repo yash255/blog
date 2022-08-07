@@ -1,8 +1,11 @@
 package com.blog.blog.payloads;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 import com.blog.blog.models.Category;
+import com.blog.blog.models.Comment;
 import com.blog.blog.models.User;
 
 import lombok.AllArgsConstructor;
@@ -31,4 +34,6 @@ private CategoryDTO category;
     
  
 private UserDTO user;
+
+private Set<CommentDTO> comments = new HashSet<>();
 }
