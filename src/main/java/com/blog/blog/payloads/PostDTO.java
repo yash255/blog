@@ -4,9 +4,7 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
-import com.blog.blog.models.Category;
-import com.blog.blog.models.Comment;
-import com.blog.blog.models.User;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
